@@ -1,0 +1,9 @@
+test "Se referencia bien la excepcion" {
+
+	try {
+		throw new DomainException()
+	}
+	catch e: wollok.lang.DomainException {}
+	
+	assert.that(true)
+}
